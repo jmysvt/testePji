@@ -21,19 +21,16 @@ public class Menu {
             Nome = scanner.nextLine();
             System.out.println("Numero de matricula do aluno: ");
             numM = scanner.nextInt();
-            System.out.println("Cadastro realizado: ");
+            System.out.println("Cadastro realizado! ");
 
         } else if (N == 2) {
+            System.out.println("Digite o nome completo do aluno para consulta: ");
+            Nome = scanner.nextLine();
             System.out.println("Digite a matricula do aluno para consulta: ");
             numMD = scanner.nextInt();
-        }
 
-            //if (numM == numMD) {
-                //System.out.println("Aluno: " + Nome + "\nMatricula: " + numM + " \nO aluno está cadastrado!");
-            //} else {
-                //System.out.println("Nenhum aluno encontrado com a matrícula: " + numMD);
-            //
-        // }
+            System.out.println("O aluno: " +Nome + "." +" Da matricula: " + numMD + " já está cadastrado! ");
+        }
             scanner.close();
     }
 }
